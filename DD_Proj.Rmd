@@ -1,0 +1,58 @@
+---
+title: "Developing Data Products Project: Regression with Diamonds"
+author: "Wesley Padilla"
+date: "2/21/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## Shiny App Overview
+
+- The application is written in R and hosted on RStudio's shiny server   
+- Source code comprised of two files - ui.R and server.R      
+- ui.R includes the user interface definition which includes the slider bar in the app   
+- server.R includes the server logic of the web application where regression, calculations and types of output are specified     
+
+
+## Diamonds Data Set Explained
+
+- Dataset preloaded in R for use by general public
+- This dataset contains information about 53,940 round-cut diamonds   
+- There are 6 variables that are of numeric structure: carat, depth, table, x, y, z   
+- There is 1 variable that has an integer structure: price
+- Summary table from R listed below   
+
+
+![](diamonds.png)
+## Diamond App Overview
+
+- The app allows you to visualize price estimates for various diamond carat sizes   
+- The slider bar lets you pick from carat size 0 to 4.  Pull it left or right to vary settings  
+- Also limited the y axis to $25,000 so the prediction estimate would be visible on the chart  
+- Link to app is - https://
+
+![](prediction.png)
+
+## Code Explained 
+
+- Example of code in server.R is shown below. 
+- Code below shows a regression analysis of the diamond dataset
+- Also predicted price based on the carat size selected on the slider bar   
+
+![](server_R_code.png)
+
+
+## References 
+
+GitHub Repository URL: https://github.com/wpadilla9/developing-data-products/   
+
+Application URL:  https://wpadilla92.shinyapps.io/predict_app/   
+
+
+
+
+
